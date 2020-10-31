@@ -1,0 +1,411 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`row match props compare snapshot 1`] = `
+<div
+  className="row"
+  style={
+    Object {
+      "margin": 10,
+      "padding": 20,
+    }
+  }
+>
+  <div
+    className="col"
+    style={
+      Object {
+        "margin": 15,
+        "padding": undefined,
+      }
+    }
+  >
+    <h1>
+      Hello World
+    </h1>
+  </div>
+  <div
+    className="col"
+    style={
+      Object {
+        "margin": 20,
+        "padding": undefined,
+      }
+    }
+  >
+    <h1>
+      I'am column
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`row match props compare snapshot 2`] = `
+<div
+  className="row"
+  style={
+    Object {
+      "margin": undefined,
+      "padding": 40,
+    }
+  }
+>
+  <div
+    className="col"
+    style={
+      Object {
+        "margin": 15,
+        "padding": undefined,
+      }
+    }
+  >
+    <h1>
+      Hello World
+    </h1>
+  </div>
+  <div
+    className="col"
+    style={
+      Object {
+        "margin": undefined,
+        "padding": undefined,
+      }
+    }
+  >
+    <h1>
+      I'am column
+    </h1>
+  </div>
+  <div
+    className="col"
+    style={
+      Object {
+        "margin": undefined,
+        "padding": 15,
+      }
+    }
+  >
+    <h1>
+      I'am last column
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`row match props compare snapshot: tree 1`] = `
+Object {
+  "instance": null,
+  "nodeType": "component",
+  "props": Object {
+    "children": Array [
+      <Col
+        margin={15}
+      >
+        <h1>
+          Hello World
+        </h1>
+      </Col>,
+      <Col
+        margin={20}
+      >
+        <h1>
+          I'am column
+        </h1>
+      </Col>,
+    ],
+    "margin": 10,
+    "padding": 20,
+  },
+  "rendered": Object {
+    "instance": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Col
+          margin={15}
+        >
+          <h1>
+            Hello World
+          </h1>
+        </Col>,
+        <Col
+          margin={20}
+        >
+          <h1>
+            I'am column
+          </h1>
+        </Col>,
+      ],
+      "className": "row",
+      "style": Object {
+        "margin": 10,
+        "padding": 20,
+      },
+    },
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "nodeType": "component",
+        "props": Object {
+          "children": <h1>
+            Hello World
+          </h1>,
+          "margin": 15,
+        },
+        "rendered": Object {
+          "instance": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h1>
+              Hello World
+            </h1>,
+            "className": "col",
+            "style": Object {
+              "margin": 15,
+              "padding": undefined,
+            },
+          },
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Hello World",
+              },
+              "rendered": Array [
+                "Hello World",
+              ],
+              "type": "h1",
+            },
+          ],
+          "type": "div",
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "nodeType": "component",
+        "props": Object {
+          "children": <h1>
+            I'am column
+          </h1>,
+          "margin": 20,
+        },
+        "rendered": Object {
+          "instance": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h1>
+              I'am column
+            </h1>,
+            "className": "col",
+            "style": Object {
+              "margin": 20,
+              "padding": undefined,
+            },
+          },
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "I'am column",
+              },
+              "rendered": Array [
+                "I'am column",
+              ],
+              "type": "h1",
+            },
+          ],
+          "type": "div",
+        },
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  "type": [Function],
+}
+`;
+
+exports[`row match props compare snapshot: tree 2`] = `
+Object {
+  "instance": null,
+  "nodeType": "component",
+  "props": Object {
+    "children": Array [
+      <Col
+        margin={15}
+      >
+        <h1>
+          Hello World
+        </h1>
+      </Col>,
+      <Col>
+        <h1>
+          I'am column
+        </h1>
+      </Col>,
+      <Col
+        padding={15}
+      >
+        <h1>
+          I'am last column
+        </h1>
+      </Col>,
+    ],
+    "padding": 40,
+  },
+  "rendered": Object {
+    "instance": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Col
+          margin={15}
+        >
+          <h1>
+            Hello World
+          </h1>
+        </Col>,
+        <Col>
+          <h1>
+            I'am column
+          </h1>
+        </Col>,
+        <Col
+          padding={15}
+        >
+          <h1>
+            I'am last column
+          </h1>
+        </Col>,
+      ],
+      "className": "row",
+      "style": Object {
+        "margin": undefined,
+        "padding": 40,
+      },
+    },
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "nodeType": "component",
+        "props": Object {
+          "children": <h1>
+            Hello World
+          </h1>,
+          "margin": 15,
+        },
+        "rendered": Object {
+          "instance": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h1>
+              Hello World
+            </h1>,
+            "className": "col",
+            "style": Object {
+              "margin": 15,
+              "padding": undefined,
+            },
+          },
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Hello World",
+              },
+              "rendered": Array [
+                "Hello World",
+              ],
+              "type": "h1",
+            },
+          ],
+          "type": "div",
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "nodeType": "component",
+        "props": Object {
+          "children": <h1>
+            I'am column
+          </h1>,
+        },
+        "rendered": Object {
+          "instance": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h1>
+              I'am column
+            </h1>,
+            "className": "col",
+            "style": Object {
+              "margin": undefined,
+              "padding": undefined,
+            },
+          },
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "I'am column",
+              },
+              "rendered": Array [
+                "I'am column",
+              ],
+              "type": "h1",
+            },
+          ],
+          "type": "div",
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "nodeType": "component",
+        "props": Object {
+          "children": <h1>
+            I'am last column
+          </h1>,
+          "padding": 15,
+        },
+        "rendered": Object {
+          "instance": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h1>
+              I'am last column
+            </h1>,
+            "className": "col",
+            "style": Object {
+              "margin": undefined,
+              "padding": 15,
+            },
+          },
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "I'am last column",
+              },
+              "rendered": Array [
+                "I'am last column",
+              ],
+              "type": "h1",
+            },
+          ],
+          "type": "div",
+        },
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  "type": [Function],
+}
+`;
